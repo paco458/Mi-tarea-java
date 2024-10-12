@@ -36,11 +36,18 @@ public class Admin extends javax.swing.JFrame {
         jbRegreso = new javax.swing.JButton();
         jbRegistar = new javax.swing.JButton();
         jbadelante = new javax.swing.JButton();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icon/Group.png"))); // NOI18N
 
@@ -51,27 +58,27 @@ public class Admin extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("Ingrse su Usuario");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 20, -1, 20));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 60, -1, 20));
 
         jLabel2.setText("Ingrse su nombre de usuario");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 120, -1, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 250, -1, -1));
 
         jLabel3.setText("Contraseña");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 60, -1, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 370, -1, -1));
 
         jtUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jtUsuarioActionPerformed(evt);
             }
         });
-        jPanel1.add(jtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 80, 290, -1));
+        jPanel1.add(jtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 300, 400, 40));
 
         jtContraseña.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jtContraseñaActionPerformed(evt);
             }
         });
-        jPanel1.add(jtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 160, 290, -1));
+        jPanel1.add(jtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 390, 410, 40));
 
         jbRegreso.setText("ir al inicio ");
         jbRegreso.addActionListener(new java.awt.event.ActionListener() {
@@ -79,7 +86,7 @@ public class Admin extends javax.swing.JFrame {
                 jbRegresoActionPerformed(evt);
             }
         });
-        jPanel1.add(jbRegreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 300, -1, -1));
+        jPanel1.add(jbRegreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 510, 150, 40));
 
         jbRegistar.setText("registar usuario");
         jbRegistar.addActionListener(new java.awt.event.ActionListener() {
@@ -87,25 +94,54 @@ public class Admin extends javax.swing.JFrame {
                 jbRegistarActionPerformed(evt);
             }
         });
-        jPanel1.add(jbRegistar, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 300, -1, -1));
+        jPanel1.add(jbRegistar, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 510, 150, 40));
 
-        jbadelante.setText("Ingrasar seccion");
-        jPanel1.add(jbadelante, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 290, -1, -1));
+        jbadelante.setText("Ingresar seccion");
+        jbadelante.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbadelanteActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jbadelante, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 510, -1, 40));
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondoBlanvo.png"))); // NOI18N
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 0, -1, -1));
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/asistente.png"))); // NOI18N
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 170, 540, -1));
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Rectangle 5(1).png"))); // NOI18N
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 170, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icon/Group.png"))); // NOI18N
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-50, 520, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, -1, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icon/Group(1).png"))); // NOI18N
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 570, -1, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icon/Group.png"))); // NOI18N
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, -190, 370, 460));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, -70, 370, 460));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icon/Group.png"))); // NOI18N
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(-150, -110, -1, -1));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icon/Group(1).png"))); // NOI18N
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 570, -1, -1));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Rectangle 4.png"))); // NOI18N
+        jLabel11.setText("jLabel11");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 670, 660));
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Rectangle 4.png"))); // NOI18N
+        jLabel12.setText("jLabel11");
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 0, 680, 660));
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Rectangle 4.png"))); // NOI18N
+        jLabel13.setText("jLabel11");
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, 670, 660));
+
+        jLabel10.setText("jLabel10");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 260, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1480, 660));
 
@@ -127,6 +163,10 @@ public class Admin extends javax.swing.JFrame {
     private void jtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtUsuarioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jtUsuarioActionPerformed
+
+    private void jbadelanteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbadelanteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbadelanteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -165,6 +205,13 @@ public class Admin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
