@@ -26,8 +26,6 @@ public class Admin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTexField1 = new Adcesorios.JTexField();
-        jTexField2 = new Adcesorios.JTexField();
         jPanel1 = new javax.swing.JPanel();
         panelRound2 = new Adcesorios.PanelRound();
         jLabel1 = new javax.swing.JLabel();
@@ -35,10 +33,12 @@ public class Admin extends javax.swing.JFrame {
         jbadelante = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jbRegistar = new javax.swing.JButton();
-        jtUsuario = new javax.swing.JTextField();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator1 = new javax.swing.JSeparator();
         jbRegreso = new javax.swing.JButton();
+        JTexcont = new Adcesorios.PanelRound();
+        jtUsuario = new javax.swing.JTextField();
+        panelRound1 = new Adcesorios.PanelRound();
         jtContraseña2 = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
@@ -71,11 +71,13 @@ public class Admin extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Liberation Sans", 1, 36)); // NOI18N
         jLabel1.setText("LOGIN");
-        panelRound2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, -1, -1));
+        panelRound2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 80, -1, -1));
 
-        jLabel21.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        jLabel21.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icon/contra.png"))); // NOI18N
         jLabel21.setText("Contraseña");
-        panelRound2.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, -1, -1));
+        panelRound2.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, -1, -1));
 
         jbadelante.setText("Ingresar seccion");
         jbadelante.addActionListener(new java.awt.event.ActionListener() {
@@ -83,11 +85,12 @@ public class Admin extends javax.swing.JFrame {
                 jbadelanteActionPerformed(evt);
             }
         });
-        panelRound2.add(jbadelante, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 470, 150, 40));
+        panelRound2.add(jbadelante, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 600, 150, 40));
 
         jLabel3.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icon/person-circle.png"))); // NOI18N
         jLabel3.setText("Ingrese su usiario");
-        panelRound2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, -1, -1));
+        panelRound2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, -1));
 
         jbRegistar.setText("registar usuario");
         jbRegistar.addActionListener(new java.awt.event.ActionListener() {
@@ -95,19 +98,11 @@ public class Admin extends javax.swing.JFrame {
                 jbRegistarActionPerformed(evt);
             }
         });
-        panelRound2.add(jbRegistar, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 510, 150, 40));
-
-        jtUsuario.setBackground(new java.awt.Color(204, 204, 204));
-        jtUsuario.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jtUsuarioActionPerformed(evt);
-            }
-        });
-        panelRound2.add(jtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 460, 40));
-        panelRound2.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 870, 310, 30));
+        panelRound2.add(jbRegistar, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 590, 150, 40));
+        panelRound2.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 890, 320, 30));
 
         jSeparator1.setAlignmentY(21.0F);
-        panelRound2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 870, 310, 10));
+        panelRound2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 890, 300, 10));
 
         jbRegreso.setForeground(new java.awt.Color(51, 102, 255));
         jbRegreso.setText("ir al inicio ");
@@ -117,7 +112,32 @@ public class Admin extends javax.swing.JFrame {
                 jbRegresoActionPerformed(evt);
             }
         });
-        panelRound2.add(jbRegreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 860, 80, 20));
+        panelRound2.add(jbRegreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 880, 80, 20));
+
+        JTexcont.setBackground(new java.awt.Color(204, 204, 204));
+        JTexcont.setRoundBottomLeft(50);
+        JTexcont.setRoundBottomRight(50);
+        JTexcont.setRoundTopLeft(50);
+        JTexcont.setRoundTopRight(50);
+        JTexcont.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jtUsuario.setBackground(new java.awt.Color(204, 204, 204));
+        jtUsuario.setForeground(new java.awt.Color(204, 204, 204));
+        jtUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtUsuarioActionPerformed(evt);
+            }
+        });
+        JTexcont.add(jtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 580, 40));
+
+        panelRound2.add(JTexcont, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 620, 60));
+
+        panelRound1.setBackground(new java.awt.Color(204, 204, 204));
+        panelRound1.setRoundBottomLeft(50);
+        panelRound1.setRoundBottomRight(50);
+        panelRound1.setRoundTopLeft(50);
+        panelRound1.setRoundTopRight(50);
+        panelRound1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jtContraseña2.setBackground(new java.awt.Color(204, 204, 204));
         jtContraseña2.addActionListener(new java.awt.event.ActionListener() {
@@ -125,9 +145,11 @@ public class Admin extends javax.swing.JFrame {
                 jtContraseña2ActionPerformed(evt);
             }
         });
-        panelRound2.add(jtContraseña2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, 460, 40));
+        panelRound1.add(jtContraseña2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 590, 40));
 
-        jPanel1.add(panelRound2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 160, 610, 720));
+        panelRound2.add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 470, 610, 60));
+
+        jPanel1.add(panelRound2, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 40, 690, 940));
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/asistente.png"))); // NOI18N
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 230, 540, -1));
@@ -152,7 +174,7 @@ public class Admin extends javax.swing.JFrame {
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Rectangle 4.png"))); // NOI18N
         jLabel11.setText("jLabel11");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 750, 670, 270));
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 750, 670, 270));
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Rectangle 4.png"))); // NOI18N
         jLabel13.setText("jLabel11");
@@ -163,7 +185,7 @@ public class Admin extends javax.swing.JFrame {
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Rectangle 4.png"))); // NOI18N
         jLabel12.setText("jLabel11");
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, -10, 610, 770));
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 0, 610, 770));
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Rectangle 4.png"))); // NOI18N
         jLabel16.setText("jLabel11");
@@ -241,6 +263,7 @@ public class Admin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private Adcesorios.PanelRound JTexcont;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -262,13 +285,12 @@ public class Admin extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private Adcesorios.JTexField jTexField1;
-    private Adcesorios.JTexField jTexField2;
     private javax.swing.JButton jbRegistar;
     private javax.swing.JButton jbRegreso;
     private javax.swing.JButton jbadelante;
     private javax.swing.JTextField jtContraseña2;
     private javax.swing.JTextField jtUsuario;
+    private Adcesorios.PanelRound panelRound1;
     private Adcesorios.PanelRound panelRound2;
     // End of variables declaration//GEN-END:variables
 }
