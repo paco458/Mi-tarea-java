@@ -75,11 +75,14 @@ public class Admin extends javax.swing.JFrame {
 
         jLabel21.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icon/contra.png"))); // NOI18N
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icon/lock-closed-sharp.png"))); // NOI18N
         jLabel21.setText("Contraseña");
         panelRound2.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, -1, -1));
 
         jbadelante.setText("Ingresar seccion");
+        jbadelante.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jbadelante.setBorderPainted(false);
+        jbadelante.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jbadelante.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbadelanteActionPerformed(evt);
@@ -87,12 +90,14 @@ public class Admin extends javax.swing.JFrame {
         });
         panelRound2.add(jbadelante, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 600, 150, 40));
 
-        jLabel3.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(204, 204, 204));
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icon/person-circle.png"))); // NOI18N
         jLabel3.setText("Ingrese su usiario");
         panelRound2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, -1));
 
         jbRegistar.setText("registar usuario");
+        jbRegistar.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jbRegistar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbRegistarActionPerformed(evt);
@@ -185,7 +190,7 @@ public class Admin extends javax.swing.JFrame {
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Rectangle 4.png"))); // NOI18N
         jLabel12.setText("jLabel11");
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 0, 610, 770));
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, -10, 610, 760));
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Rectangle 4.png"))); // NOI18N
         jLabel16.setText("jLabel11");
