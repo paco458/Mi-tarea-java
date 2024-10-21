@@ -27,8 +27,6 @@ public class Inic extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        btUsuario = new Adcesorios.button();
-        btAdministrador = new Adcesorios.button();
         p1 = new javax.swing.JLabel();
         p2 = new javax.swing.JLabel();
         p3 = new javax.swing.JLabel();
@@ -38,22 +36,6 @@ public class Inic extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        btUsuario.setText("Usuario");
-        btUsuario.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btUsuarioActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 310, 110));
-
-        btAdministrador.setText("Administrador");
-        btAdministrador.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btAdministradorActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btAdministrador, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 90, 310, 110));
 
         p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/giphy.gif"))); // NOI18N
         jPanel1.add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -50, -1, -1));
@@ -122,8 +104,6 @@ public class Inic extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private Adcesorios.button btAdministrador;
-    private Adcesorios.button btUsuario;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel p1;
