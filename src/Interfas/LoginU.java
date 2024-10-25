@@ -6,14 +6,14 @@ package Interfas;
 
 /**
  *
- * @author salazar
+ * @author jefe
  */
-public class Login extends javax.swing.JFrame {
+public class LoginU extends javax.swing.JFrame {
 
     /**
-     * Creates new form Admin
+     * Creates new form LoginU
      */
-    public Login() {
+    public LoginU() {
         initComponents();
     }
 
@@ -35,13 +35,12 @@ public class Login extends javax.swing.JFrame {
         jTextUsername = new javax.swing.JTextField();
         jlPassword = new javax.swing.JLabel();
         jlUsername = new javax.swing.JLabel();
-        jPH1 = new javax.swing.JPanel();
-        jlLoginH1 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel1.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jpLogin.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -85,16 +84,21 @@ public class Login extends javax.swing.JFrame {
         jlUsername.setText("Ingrese su usuario");
         jpLogin.add(jlUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, -1, -1));
 
-        jPanel1.add(jpLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 260, 850, 510));
+        jLabel1.setText("jLabel1");
+        jpLogin.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 310, -1, -1));
 
-        jPH1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel1.add(jPH1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 150, 850, 100));
+        jPanel1.add(jpLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 320, 850, 510));
 
-        jlLoginH1.setFont(new java.awt.Font("Fira Sans", 1, 48)); // NOI18N
-        jlLoginH1.setText("LOGIN");
-        jPanel1.add(jlLoginH1, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 60, -1, -1));
-
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 2040, 1050));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 2015, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 982, Short.MAX_VALUE)
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -128,34 +132,32 @@ public class Login extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Login().setVisible(true);
+                new LoginU().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel jPH1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextUsername;
     private javax.swing.JTextField jTextpassword;
     private javax.swing.JButton jbAdministrador;
     private javax.swing.JButton jbIngresar;
     private javax.swing.JButton jbMesero;
-    private javax.swing.JLabel jlLoginH1;
     private javax.swing.JLabel jlPassword;
     private javax.swing.JLabel jlUsername;
     private javax.swing.JPanel jpLogin;

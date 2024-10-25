@@ -27,67 +27,16 @@ public class usuario extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jtRegisUSurio = new javax.swing.JTextField();
-        jtContraseña = new javax.swing.JTextField();
-        jbingresarU = new javax.swing.JButton();
-        jbregreso = new javax.swing.JButton();
-        imgPor = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel1.setText("Ingrse su Usuario");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, -1, -1));
-
-        jLabel2.setText("Ingrse su nombre de usuario");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 90, -1, -1));
-
-        jLabel3.setText("Contraseña");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 160, -1, 20));
-
-        jtRegisUSurio.setText("jTextField1");
-        jtRegisUSurio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jtRegisUSurioActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jtRegisUSurio, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 120, 340, -1));
-
-        jtContraseña.setText("jTextField2");
-        jPanel1.add(jtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 190, 340, -1));
-
-        jbingresarU.setText("Ingresar seccion");
-        jbingresarU.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbingresarUActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jbingresarU, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 260, -1, -1));
-
-        jbregreso.setText("ir al inicio ");
-        jPanel1.add(jbregreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 310, -1, -1));
-
-        imgPor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Rectangle 4.png"))); // NOI18N
-        jPanel1.add(imgPor, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 760));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jbingresarUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbingresarUActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jbingresarUActionPerformed
-
-    private void jtRegisUSurioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtRegisUSurioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jtRegisUSurioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -125,14 +74,6 @@ public class usuario extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel imgPor;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton jbingresarU;
-    private javax.swing.JButton jbregreso;
-    private javax.swing.JTextField jtContraseña;
-    private javax.swing.JTextField jtRegisUSurio;
     // End of variables declaration//GEN-END:variables
 }
