@@ -62,7 +62,7 @@ public class Inic extends javax.swing.JFrame {
     }//GEN-LAST:event_btUsuarioActionPerformed
 
     private void btAdministradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAdministradorActionPerformed
-        Admin ad = new Admin();
+        Login ad = new Login();
         ad.setVisible(true);
         this.setVisible(false);
         
