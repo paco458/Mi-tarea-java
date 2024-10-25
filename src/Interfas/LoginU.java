@@ -36,6 +36,7 @@ public class LoginU extends javax.swing.JFrame {
         jlPassword = new javax.swing.JLabel();
         jlUsername = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -87,7 +88,20 @@ public class LoginU extends javax.swing.JFrame {
         jLabel1.setText("jLabel1");
         jpLogin.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 310, -1, -1));
 
-        jPanel1.add(jpLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 320, 850, 510));
+        jPanel1.add(jpLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 240, 850, 510));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 850, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 130, 850, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -153,6 +167,7 @@ public class LoginU extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField jTextUsername;
     private javax.swing.JTextField jTextpassword;
     private javax.swing.JButton jbAdministrador;
