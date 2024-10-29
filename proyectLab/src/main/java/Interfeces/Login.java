@@ -44,7 +44,6 @@ public class Login extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jpLogin.setBackground(new java.awt.Color(255, 255, 255));
-        jpLogin.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jbMesero.setText("Mesero");
         jbMesero.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -53,13 +52,10 @@ public class Login extends javax.swing.JFrame {
                 jbMeseroActionPerformed(evt);
             }
         });
-        jpLogin.add(jbMesero, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 360, 200, 60));
 
         jbIngresar.setText("Ingresar seccion");
-        jpLogin.add(jbIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 360, 200, 60));
 
         jbAdministrador.setText("Administrador");
-        jpLogin.add(jbAdministrador, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 200, 60));
 
         jTextpassword.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTextpassword.addActionListener(new java.awt.event.ActionListener() {
@@ -67,7 +63,6 @@ public class Login extends javax.swing.JFrame {
                 jTextpasswordActionPerformed(evt);
             }
         });
-        jpLogin.add(jTextpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, 670, 50));
 
         jTextUsername.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTextUsername.addActionListener(new java.awt.event.ActionListener() {
@@ -75,13 +70,52 @@ public class Login extends javax.swing.JFrame {
                 jTextUsernameActionPerformed(evt);
             }
         });
-        jpLogin.add(jTextUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, 670, 50));
 
         jlPassword.setText("Contraseña");
-        jpLogin.add(jlPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, -1, -1));
 
         jlUsername.setText("Ingrese su usuario");
-        jpLogin.add(jlUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, -1, -1));
+
+        javax.swing.GroupLayout jpLoginLayout = new javax.swing.GroupLayout(jpLogin);
+        jpLogin.setLayout(jpLoginLayout);
+        jpLoginLayout.setHorizontalGroup(
+            jpLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpLoginLayout.createSequentialGroup()
+                .addGap(100, 100, 100)
+                .addComponent(jlUsername))
+            .addGroup(jpLoginLayout.createSequentialGroup()
+                .addGap(100, 100, 100)
+                .addComponent(jTextUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 670, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jpLoginLayout.createSequentialGroup()
+                .addGap(100, 100, 100)
+                .addComponent(jlPassword))
+            .addGroup(jpLoginLayout.createSequentialGroup()
+                .addGap(100, 100, 100)
+                .addComponent(jTextpassword, javax.swing.GroupLayout.PREFERRED_SIZE, 670, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jpLoginLayout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addComponent(jbIngresar, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(70, 70, 70)
+                .addComponent(jbAdministrador, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(60, 60, 60)
+                .addComponent(jbMesero, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jpLoginLayout.setVerticalGroup(
+            jpLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpLoginLayout.createSequentialGroup()
+                .addGap(100, 100, 100)
+                .addComponent(jlUsername)
+                .addGap(13, 13, 13)
+                .addComponent(jTextUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(jlPassword)
+                .addGap(13, 13, 13)
+                .addComponent(jTextpassword, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(80, 80, 80)
+                .addGroup(jpLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jbIngresar, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jbAdministrador, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jbMesero, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
 
         getContentPane().add(jpLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 240, 850, 510));
 
