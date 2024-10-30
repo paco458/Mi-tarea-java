@@ -32,31 +32,98 @@ public class panelUser extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
+        jSeparator2 = new javax.swing.JSeparator();
+        background = new javax.swing.JPanel();
+        optiones = new javax.swing.JPanel();
+        jbpaltos = new javax.swing.JButton();
+        jbDrinks = new javax.swing.JButton();
+        jbJuices = new javax.swing.JButton();
+        jbReturn = new javax.swing.JButton();
+        jSeparator1 = new javax.swing.JSeparator();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jRadioButton1 = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jRadioButton3 = new javax.swing.JRadioButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        background.setBackground(new java.awt.Color(255, 255, 255));
+        background.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(0, 204, 0));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        optiones.setBackground(new java.awt.Color(0, 204, 0));
+        optiones.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jbpaltos.setText("PALTOS DE FONDO");
+        jbpaltos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jbpaltos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbpaltosActionPerformed(evt);
+            }
+        });
+        optiones.add(jbpaltos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 330, 270, 70));
+
+        jbDrinks.setText("BEVIDAS");
+        jbDrinks.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        optiones.add(jbDrinks, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 590, 270, 70));
+
+        jbJuices.setText("JUGOS");
+        jbJuices.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        optiones.add(jbJuices, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 460, 270, 70));
+
+        jbReturn.setText("REGRESAR");
+        optiones.add(jbReturn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 990, 270, 70));
+
+        background.add(optiones, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 270, 1130));
+
+        jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
+        background.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1530, 680, 380, 20));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        background.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1530, 690, 380, 410));
+
+        jRadioButton1.setText("jRadioButton1");
+        background.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 270, -1, -1));
 
         jButton1.setText("jButton1");
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 270, 70));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        background.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 120, 220, 190));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 270, 1130));
+        jRadioButton2.setText("jRadioButton2");
+        background.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 270, -1, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -80, 2020, 1140));
+        jRadioButton3.setText("jRadioButton3");
+        background.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 270, -1, -1));
+
+        jButton2.setText("jButton2");
+        background.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 120, 220, 190));
+
+        jButton3.setText("jButton3");
+        background.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 120, 220, 190));
+
+        getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -80, 1950, 1140));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jbpaltosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbpaltosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbpaltosActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -74,8 +141,21 @@ public class panelUser extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel background;
     private javax.swing.JButton jButton1;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JButton jbDrinks;
+    private javax.swing.JButton jbJuices;
+    private javax.swing.JButton jbReturn;
+    private javax.swing.JButton jbpaltos;
+    private javax.swing.JPanel optiones;
     // End of variables declaration//GEN-END:variables
 }
